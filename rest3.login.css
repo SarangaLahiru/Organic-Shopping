@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(243, 255, 243);
+}
+.box1{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 500px;
+    height: 300px;
+    padding: 50px 85px;
+   margin-top: 135px;
+   border-radius: 30px;
+   box-shadow: 0px 0px 10px black;
+    background: linear-gradient(to left top,rgb(29, 58, 5),rgb(70, 136, 17),rgb(226, 253, 105));
+}
+.box img{
+    width: 250px;
+    margin-top: 10px;
+    height: 230px;
+    transform: scale(0.70);
+    animation: anim 5s infinite;
+   
+    
+}
+@keyframes anim{
+    0%{
+        transform: rotatey(0deg);
+    }
+    100%{
+        transform: rotatey(360deg);
+    }
+}
+.box form{
+    position: relative;
+    top: 28px;
+    left: 35px;
+    
+}
+.box form input[type='text'], input[type='email'],input[type='password']{
+    font-size: 16px;
+    padding: 8px 50px;
+    border-radius: 30px;
+    border: none;
+    border: 1px rgb(139, 137, 137) solid;
+}
+.box form input[type='text']:valid, input[type='text']:focus{
+    outline-color: greenyellow;
+}
+.box form input[type='email']:valid, input[type='email']:focus{
+    outline-color: greenyellow;
+}.box form input[type='password']:valid, input[type='password']:focus{
+    outline-color: greenyellow;
+}
+
+.box form input{
+    margin: 10px 15px;
+}
+.box form i{
+    margin-left: 34px;
+    position: absolute;
+    margin-top: 19px;
+    color: green;
+    
+}
+.box form input[type='submit']{
+    padding: 8px 120px;
+    margin-left: 18px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(144, 211, 43);
+    color: white;
+}
+.box form input[type='submit']:hover{
+    background-color: black;
+    box-shadow: 0px 0px 10px black;
+}
+.box form input[type='submit']:active{
+    transform: scale(0.9);
+}
+.box p{
+    color: aliceblue;
+    
+}
+.box a{
+    color: green;
+    font-size: 18px;
+}
